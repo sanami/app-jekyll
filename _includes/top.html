@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+{% css_asset_tag application %}
+- /_assets/stylesheets/syntax.css
+- /_assets/stylesheets/main.css
+{% endcss_asset_tag %}
+
+{% javascript_asset_tag application %}
+- /_assets/vendor/jquery.js
+- /_assets/vendor/underscore.js
+- /_assets/vendor/backbone.js
+- /_assets/javascripts/application.js.coffee
+{% endjavascript_asset_tag %}
+
+</head>
